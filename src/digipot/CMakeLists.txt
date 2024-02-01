@@ -35,21 +35,21 @@ ament_target_dependencies(delivery_bot
 
 # Install executable
 install(TARGETS delivery_bot
-        DESTINATION lib/${PROJECT_NAME})
+        DESTINATION lib/${delivery_bot_package})
 
 # Install launch files
 install(DIRECTORY
   launch
-  DESTINATION share/${PROJECT_NAME}/
+  DESTINATION share/${delivery_bot_package}/
 )
 
 # Install Python modules (if any)
-# ament_python_install_package(${PROJECT_NAME})
+# ament_python_install_package(${delivery_bot_package})
 
 # Install package.xml
 install(FILES
   package.xml
-  DESTINATION share/${PROJECT_NAME}
+  DESTINATION share/${delivery_bot_package}
 )
 
 ament_package()
