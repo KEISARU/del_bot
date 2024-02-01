@@ -1,3 +1,0 @@
-[console_scripts]
-ws_server_node = ws_server.ws_server_node:main
-

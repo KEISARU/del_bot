@@ -1,1 +1,0 @@
-rtcbot_adapter
